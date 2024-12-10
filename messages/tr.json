@@ -1,0 +1,32 @@
+{
+    "HeaderLink": {
+        "home": "Anasayfa",
+        "tours": "Turlar",
+        "destinations": "Hedefler",
+        "villa": "Villa",
+        "hotel": "Otel",
+        "about": "Hakkımızda",
+        "blog": "Blog",
+        "contact": "İletişim"
+    },
+    "Common": {
+        "viewMoreBtn": "Daha Fazla"
+    },
+    "HomePage": {
+        "title": "Senin Yolculuğun, Senin Yolun",
+        "subtitle": "Travila ile Dünya Hazinelerini Keşfedin",
+        "popular_villa_title": "Popüler Villalar",
+        "popular_villa_subtitle": "Müşteriler tarafından değerlendirilen kalite. İdeal fiyata rezervasyon yapın!"
+    },
+    "VillaDetail": {
+        "show_on_map": "Haritada Göster",
+        "share": "Beğen",
+        "villa-code": "Villa Kodu",
+        "reviews": "görüntüleme",
+        "booking_form": "Rezervasyon Formu",
+        "owerview": "Genel Bakış",
+        "highlight": "Öne Çıkan Özellikler",
+        "included_excluded": "Dahil / Dahil Değil",
+        "questions_answer": "Soru Cevap"
+    }
+}

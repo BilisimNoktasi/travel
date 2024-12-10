@@ -1,0 +1,21 @@
+{
+    "HeaderLink": {
+        "home": "Home",
+        "tours": "Tours",
+        "destinations": "Destinations",
+        "villa": "Villa",
+        "hotel": "Hotels",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact"
+    }, 
+    "Common": {
+        "viewMoreBtn": "View More"
+    },
+    "HomePage": {
+        "title": "Your Journey, Your Way",
+        "subtitle": "Discover World Treasures with Travila",
+        "popular_villa_title": "Popular Villas",
+        "popular_villa_subtitle": "Quality as judged by customers. Book at the ideal price!"
+    }
+}
