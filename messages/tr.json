@@ -12,6 +12,14 @@
     "Common": {
         "viewMoreBtn": "Daha Fazla"
     },
+    "SearchBar":{
+        "description":"Yardıma ihtiyacın mı var?",
+        "location":"Konum",
+        "checkIn":"Giriş Tarihi",
+        "checkOut":"Çıkış Tarihi",
+        "guest":"Misafir",
+        "search":"Ara"
+       },
     "TourCard": {
         "reviews":"görüntülenme",
         "hours":"saat",
