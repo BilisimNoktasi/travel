@@ -13,7 +13,7 @@ export default function Footer3() {
                                             experience.</p>
                                     </div>
                                     <div className="box-need-help">
-                                        <p className="need-help text-md-medium mb-5 neutral-1000">Need help? Call us</p><br /><Link className="heading-6 phone-support" href="/tel:1-800-222-8888">1-800-222-8888</Link>
+                                        <p className="need-help text-md-medium mb-5 neutral-1000">Need help?? Call us</p><br /><Link className="heading-6 phone-support" href="/tel:1-800-222-8888">1-800-222-8888</Link>
                                     </div>
                                 </div>
                             </div>
