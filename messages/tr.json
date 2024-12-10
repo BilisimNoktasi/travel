@@ -12,11 +12,19 @@
     "Common": {
         "viewMoreBtn": "Daha Fazla"
     },
+    "TourCard": {
+        "reviews":"görüntülenme",
+        "hours":"saat",
+        "group_size":"kapasite",
+        "person":"kişi"
+    },
     "HomePage": {
         "title": "Senin Yolculuğun, Senin Yolun",
         "subtitle": "Travila ile Dünya Hazinelerini Keşfedin",
         "popular_villa_title": "Popüler Villalar",
-        "popular_villa_subtitle": "Müşteriler tarafından değerlendirilen kalite. İdeal fiyata rezervasyon yapın!"
+        "popular_villa_subtitle": "Müşteriler tarafından değerlendirilen kalite. İdeal fiyata rezervasyon yapın!",
+        "popular_destinations": "Popüler Hedefler",
+        "popular_destinations_subtitle": "Müşteri yorumlarına göre favori destinasyonlar"
     },
     "VillaDetail": {
         "show_on_map": "Haritada Göster",
