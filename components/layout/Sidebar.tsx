@@ -2,8 +2,10 @@ import Link from 'next/link'
 import CurrencyDropdown from '@/components/elements/CurrencyDropdown'
 import LanguageDropdown from '@/components/elements/LanguageDropdown'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import { useTranslations } from 'next-intl'
 
 export default function Sidebar({ isSidebar, handleSidebar, }: any) {
+	const t= useTranslations("SideBarMenu")
 	return (
 		<>
 
@@ -23,87 +25,51 @@ export default function Sidebar({ isSidebar, handleSidebar, }: any) {
 							<div className="card-author">
 								<div className="card-image"> <img src="/assets/imgs/page/homepage1/author2.png" alt="Travila" /></div>
 								<div className="card-info">
-									<p className="text-md-bold neutral-1000">Alice Roses</p>
-									<p className="text-xs neutral-1000">London, England</p>
+									<p className="text-md-bold neutral-1000">Birgül İsaf</p>
+									<p className="text-xs neutral-1000">Antalya</p>
 								</div>
-							</div><Link className="btn btn-black" href="#">Logout</Link>
+							</div><Link className="btn btn-black" href="#">{t("logout")}</Link>
 						</div>
 						<div className="box-quicklinks">
-							<h6 className="title-quicklinks neutral-1000">Quick Links</h6>
+							<h6 className="title-quicklinks neutral-1000">{t("quickLinks")}</h6>
 							<div className="box-list-quicklinks">
 								<div className="item-quicklinks">
 									<div className="item-icon"> <img src="/assets/imgs/template/icons/notify.svg" alt="Travila" />
 									</div>
 									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">Notifications</h6>
+										<h6 className="text-md-bold neutral-1000">{t("notifications")}</h6>
 									</Link>
-										<p className="text-xs neutral-500 online">2 new messages</p>
+										<p className="text-xs neutral-500 online">2 yeni mesaj</p>
 									</div>
 								</div>
 								<div className="item-quicklinks">
 									<div className="item-icon"> <img src="/assets/imgs/template/icons/bookmark.svg" alt="Travila" />
 									</div>
 									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">Bookmark</h6>
+										<h6 className="text-md-bold neutral-1000">{t("bookMarks")}</h6>
 									</Link>
 										<p className="text-xs neutral-500">7 tours, 2 rooms</p>
-									</div>
-								</div>
-								<div className="item-quicklinks">
-									<div className="item-icon"> <img src="/assets/imgs/template/icons/wallet.svg" alt="Travila" />
-									</div>
-									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">My Wallet</h6>
-									</Link>
-										<p className="text-xs neutral-500">$4500</p>
-									</div>
-								</div>
-								<div className="item-quicklinks">
-									<div className="item-icon"> <img src="/assets/imgs/template/icons/discount.svg" alt="Travila" />
-									</div>
-									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">Discount</h6>
-									</Link>
-										<p className="text-xs neutral-500">Only today</p>
-									</div>
-								</div>
-								<div className="item-quicklinks">
-									<div className="item-icon"> <img src="/assets/imgs/template/icons/friends.svg" alt="Travila" />
-									</div>
-									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">Friends</h6>
-									</Link>
-										<p className="text-xs neutral-500">Your team</p>
-									</div>
-								</div>
-								<div className="item-quicklinks">
-									<div className="item-icon"> <img src="/assets/imgs/template/icons/tickets.svg" alt="Travila" />
-									</div>
-									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">Tickets</h6>
-									</Link>
-										<p className="text-xs neutral-500 resolved">3 resolved tickets</p>
 									</div>
 								</div>
 								<div className="item-quicklinks">
 									<div className="item-icon"> <img src="/assets/imgs/template/icons/settings.svg" alt="Travila" />
 									</div>
 									<div className="item-info"> <Link href="#">
-										<h6 className="text-md-bold neutral-1000">Setting</h6>
+										<h6 className="text-md-bold neutral-1000">{t("settings")}</h6>
 									</Link>
-										<p className="text-xs neutral-500">Your account</p>
+										<p className="text-xs neutral-500">Hesap Ayarları</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="box-eventsdate">
-							<h6 className="title-eventsdate neutral-1000">Event Dates</h6>
+							<h6 className="title-eventsdate neutral-1000">{t("eventDates")}</h6>
 							<div className="box-calendar-events">
 								<div id="calendar-events" />
 							</div>
 						</div>
 						<div className="box-savedplaces">
-							<h6 className="title-savedplaces neutral-1000">Saved Places</h6>
+							<h6 className="title-savedplaces neutral-1000">{t("savedPlaces")}</h6>
 							<div className="box-list-places">
 								<div className="card-place">
 									<div className="card-image"> <img src="/assets/imgs/page/homepage1/place.png" alt="Travila" />
@@ -159,11 +125,11 @@ export default function Sidebar({ isSidebar, handleSidebar, }: any) {
 							</div>
 						</div>
 						<div className="box-contactus">
-							<h6 className="title-contactus neutral-1000">Contact Us</h6>
+							<h6 className="title-contactus neutral-1000">{t("contactUs")}</h6>
 							<div className="contact-info">
 								<p className="address-2 text-md-medium neutral-1000">4517 Washington Ave. <br />Manchester, Kentucky
 									39495</p>
-								<p className="hour-work-2 text-md-medium neutral-1000">Hours: 8:00 - 17:00, Mon - Sat</p>
+								<p className="hour-work-2 text-md-medium neutral-1000">{t("hours")}: 8:00 - 17:00, Mon - Sat</p>
 								<p className="email-2 text-md-medium neutral-1000">support@travila.com</p>
 							</div>
 						</div>

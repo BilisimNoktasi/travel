@@ -1,8 +1,10 @@
 
 import Link from "next/link"
 import CategoryFilter from '../elements/CategoryFilter'
+import { useTranslations } from "next-intl"
 
 export default function PopularDestinations1() {
+    const t=useTranslations("FilterByProporties")
     return (
         <>
 
@@ -10,8 +12,8 @@ export default function PopularDestinations1() {
                 <div className="container">
                     <div className="row align-items-end">
                         <div className="col-lg-6 mb-30 text-center text-lg-start">
-                            <h2 className="neutral-1000">Popular Destinations</h2>
-                            <p className="text-xl-medium neutral-500">Favorite destinations based on customer reviews</p>
+                            <h2 className="neutral-1000">{t("title")}</h2>
+                            <p className="text-xl-medium neutral-500">{t("subTitle")}</p>
                         </div>
                         <div className="col-lg-6 mb-30">
 						<CategoryFilter />

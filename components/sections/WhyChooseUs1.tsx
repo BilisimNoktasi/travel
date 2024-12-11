@@ -1,16 +1,17 @@
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 
 export default function WhyChooseUs1() {
+    const t=useTranslations("WhyChooseUs")
     return (
         <>
 
             <section className="section-box box-why-choose-us background-body">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-6 mb-40"><span className="btn btn-tag">Why Choose Us</span>
-                            <h2 className="title-why neutral-1000">Dare to live the lift you’ve always wanted</h2>
-                            <p className="text-xl-medium neutral-500">Discover how you can offset your adventure's carbon
-                                emissions and support the sustainable initiatives practiced by our operators worldwide.</p>
+                        <div className="col-lg-6 mb-40"><span className="btn btn-tag">{t("miniTitle")}</span>
+                            <h2 className="title-why neutral-1000">{t("bigTitle")}</h2>
+                            <p className="text-xl-medium neutral-500">{t("descrption")}</p>
                             <div className="download-apps"> <Link href="#"><img src="/assets/imgs/template/googleplay.png" alt="Travila" /></Link><Link href="#"><img src="/assets/imgs/template/appstore.png" alt="Travila" /></Link></div>
                         </div>
                         <div className="col-lg-6 mb-40">

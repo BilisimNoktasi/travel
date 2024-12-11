@@ -4,10 +4,11 @@ import SearchFilterBottom from '@/components/elements/SearchFilterBottom'
 import Layout from "@/components/layout/Layout"
 import SwiperGroupPaymentSlider from '@/components/slider/SwiperGroupPaymentSlider'
 import { swiperGroup1, swiperGroupAnimate } from "@/util/swiperOption"
+import { useTranslations } from 'next-intl'
 import Link from "next/link"
 import { Swiper, SwiperSlide } from "swiper/react"
 export default function Destination2() {
-
+	const t= useTranslations("Destinations")
 	return (
 		<>
 
@@ -16,11 +17,11 @@ export default function Destination2() {
 					<section className="box-section box-breadcrumb background-body">
 						<div className="container">
 							<ul className="breadcrumbs">
-								<li> <Link href="/">Home</Link><span className="arrow-right">
+								<li> <Link href="/">{t("home")}</Link><span className="arrow-right">
 									<svg width={7} height={12} viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1 11L6 6L1 1" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 									</svg></span></li>
-								<li> <Link href="/destination-2">Destinations</Link><span className="arrow-right">
+								<li> <Link href="/destination-2">{t("destinations")}</Link><span className="arrow-right">
 									<svg width={7} height={12} viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1 11L6 6L1 1" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 									</svg></span></li>
@@ -63,8 +64,8 @@ export default function Destination2() {
 						<div className="container">
 							<div className="row align-items-end">
 								<div className="col-lg-6 mb-30 text-center text-lg-start">
-									<h2 className="neutral-1000">Popular Destinations</h2>
-									<p className="text-xl-medium neutral-500">Favorite destinations based on customer reviews</p>
+									<h2 className="neutral-1000">{t("bigTitle")}</h2>
+									<p className="text-xl-medium neutral-500">{t("miniTitle")}</p>
 								</div>
 								<div className="col-lg-6 mb-30">
 									<CategoryFilter />
@@ -77,7 +78,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">Venice</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -91,7 +92,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular2.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">Amsterdam</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -105,7 +106,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular3.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">Budapest</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -119,7 +120,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular4.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">Lisbon</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -133,7 +134,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular5.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">London</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -147,7 +148,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular6.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">Ottawa</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -161,7 +162,7 @@ export default function Destination2() {
 											<div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular7.png" alt="Travila" /></Link></div>
 											<div className="card-info"> <Link className="card-title" href="/destination">Paris</Link>
 												<div className="card-meta">
-													<div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248 Activities</Link></div>
+													<div className="meta-links"> <Link href="#">356 {t("tour")}, </Link><Link href="#">248 {t("activities")}</Link></div>
 													<div className="card-button"> <Link href="/destination">
 														<svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011" strokeLinecap="round" strokeLinejoin="round" />
@@ -192,8 +193,8 @@ export default function Destination2() {
 						<div className="container">
 							<div className="row align-items-end">
 								<div className="col-md-9">
-									<h2 className="neutral-1000">Top Rated Hotels</h2>
-									<p className="text-xl-medium neutral-500">Quality as judged by customers. Book at the ideal price!</p>
+									<h2 className="neutral-1000">{t("bigTitle2")}</h2>
+									<p className="text-xl-medium neutral-500">{t("miniTitle2")}</p>
 								</div>
 								<div className="col-md-3 position-relative mb-30">
 									<div className="box-button-slider box-button-slider-team justify-content-end">
@@ -224,7 +225,7 @@ export default function Destination2() {
 												<div className="card-info">
 													<div className="card-rating">
 														<div className="card-left"> </div>
-														<div className="card-right"> <span className="rating">4.96 <span className="text-sm-medium neutral-500">(672 reviews)</span></span></div>
+														<div className="card-right"> <span className="rating">4.96 <span className="text-sm-medium neutral-500">(672 {t("reviews")}  )</span></span></div>
 													</div>
 													<div className="card-title"> <Link className="heading-6 neutral-1000" href="/hotel-detail">California Sunset/Twilight Boat Cruise </Link></div>
 													<div className="card-program">
@@ -235,9 +236,9 @@ export default function Destination2() {
 														<div className="endtime">
 															<div className="card-price">
 																<h6 className="heading-6 neutral-1000">$48.25</h6>
-																<p className="text-md-medium neutral-500">/ person</p>
+																<p className="text-md-medium neutral-500">{t("person")}</p>
 															</div>
-															<div className="card-button"> <Link className="btn btn-gray" href="/hotel-detail">Book Now</Link></div>
+															<div className="card-button"> <Link className="btn btn-gray" href="/hotel-detail">{t("bookNow")}</Link></div>
 														</div>
 													</div>
 												</div>
@@ -392,8 +393,8 @@ export default function Destination2() {
 						<div className="container">
 							<div className="row align-items-end">
 								<div className="col-lg-6 mb-30 text-center text-lg-start wow fadeInUp">
-									<h2 className="neutral-1000">Featured Europe Tours</h2>
-									<p className="text-xl-medium neutral-500">Favorite destinations based on customer reviews</p>
+									<h2 className="neutral-1000">{t("bigTitle3")}</h2>
+									<p className="text-xl-medium neutral-500">{t("miniTitle3")}</p>
 								</div>
 								<div className="col-lg-6 mb-30 wow fadeInUp">
 									<CategoryFilter />
@@ -403,7 +404,7 @@ export default function Destination2() {
 								<div className="row">
 									<div className="col-lg-4 col-md-6 wow fadeIn">
 										<div className="card-journey-small background-card">
-											<div className="card-image"> <Link className="label" href="#">Top Rated</Link><Link className="wish" href="#">
+											<div className="card-image"> <Link className="label" href="#">{t("topRated")}</Link><Link className="wish" href="#">
 												<svg width={20} height={18} viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
 													<path d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 												</svg></Link><img src="/assets/imgs/page/homepage1/journey2.png" alt="Travila" />
@@ -411,20 +412,20 @@ export default function Destination2() {
 											<div className="card-info background-card">
 												<div className="card-rating">
 													<div className="card-left"> </div>
-													<div className="card-right"> <span className="rating">4.96 <span className="text-sm-medium neutral-500">(672 reviews)</span></span></div>
+													<div className="card-right"> <span className="rating">4.96 <span className="text-sm-medium neutral-500">(672 {t("reviews")})</span></span></div>
 												</div>
 												<div className="card-title"> <Link className="heading-6 neutral-1000" href="/tour-detail">California Sunset/Twilight Boat Cruise </Link></div>
 												<div className="card-program">
 													<div className="card-duration-tour">
-														<p className="icon-duration text-md-medium neutral-500">2 days 3 nights</p>
-														<p className="icon-guest text-md-medium neutral-500">4-6 guest</p>
+														<p className="icon-duration text-md-medium neutral-500">2 {t("days")} 3 {t("night")}</p>
+														<p className="icon-guest text-md-medium neutral-500">4-6 {t("guest")}</p>
 													</div>
 													<div className="endtime">
 														<div className="card-price">
 															<h6 className="heading-6 neutral-1000">$48.25</h6>
-															<p className="text-md-medium neutral-500">/ person</p>
+															<p className="text-md-medium neutral-500">/ {t("person")}</p>
 														</div>
-														<div className="card-button"> <Link className="btn btn-gray" href="/tour-detail">Book Now</Link></div>
+														<div className="card-button"> <Link className="btn btn-gray" href="/tour-detail">{t("bookNow")}</Link></div>
 													</div>
 												</div>
 											</div>
@@ -897,9 +898,9 @@ export default function Destination2() {
 									</div>
 								</div>
 								<div className="col-lg-6 mb-30 wow fadeInUp">
-									<div className="box-right-skyward"><span className="btn btn-tag-white">Takes You Skyward</span>
-										<h4 className="title-why mb-25 mt-10 neutral-1000">Your Premier Destination for Unmatched Flight Experiences</h4>
-										<p className="text-lg-medium mb-25 neutral-1000">Experience stress-free travel planning with our website where you can easily book flights, check in an make changes to your itinerary with just a few clicks</p>
+									<div className="box-right-skyward"><span className="btn btn-tag-white">{t("buttonSky")}</span>
+										<h4 className="title-why mb-25 mt-10 neutral-1000">{t("bigTitle4")}</h4>
+										<p className="text-lg-medium mb-25 neutral-1000">{t("description")}</p>
 										<div className="payment-method mt-60">
 											<div className="box-swiper mt-30">
 												<div className="swiper-container swiper-group-payment">
@@ -915,13 +916,13 @@ export default function Destination2() {
 					<section className="section-box box-subscriber box-subscriber-destination background-body">
 						<div className="container">
 							<div className="block-subscriber">
-								<div className="subscriber-left"><span className="btn btn-brand-secondary">Join our newsletter</span>
-									<h5 className="mt-15 mb-30 neutral-1000">Subscribe to see secret deals prices drop the moment you sign up!</h5>
+								<div className="subscriber-left"><span className="btn btn-brand-secondary">{t("newsletterButton")}</span>
+									<h5 className="mt-15 mb-30 neutral-1000">{t("description2")}</h5>
 									<form className="form-subscriber" action="#">
-										<input className="form-control" type="text" placeholder="Your Email" />
-										<input className="btn btn-submit" type="submit" defaultValue="Subscribe" />
+										<input className="form-control" type="text" placeholder={t("eMail")} />
+										<input className="btn btn-submit" type="submit" defaultValue={("Abone Ol")} />
 									</form>
-									<p className="text-sm-medium neutral-500 mt-15">No ads. No trails. No commitments</p>
+									<p className="text-sm-medium neutral-500 mt-15">{t("miniDescription")}</p>
 								</div>
 								<div className="subscriber-right" />
 							</div>
