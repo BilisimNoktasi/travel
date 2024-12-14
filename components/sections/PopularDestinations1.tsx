@@ -1,5 +1,5 @@
 
-import Link from "next/link"
+import { Link } from '@/i18n/routing'
 import CategoryFilter from '../elements/CategoryFilter'
 import { useTranslations } from "next-intl"
 

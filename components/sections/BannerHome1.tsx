@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from '@/i18n/routing'
 import BannerMainSlider from '../slider/BannerMainSlider'
 
 import SearchFilterBottom from '@/components/elements/SearchFilterBottom'

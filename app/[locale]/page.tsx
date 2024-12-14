@@ -2,7 +2,6 @@ import Layout from "@/components/layout/Layout"
 import BannerHome1 from "@/components/sections/BannerHome1"
 
 import Category from "@/components/sections/Category"
-import Flights1 from "@/components/sections/Flights1"
 import News1 from "@/components/sections/News1"
 import Payments1 from "@/components/sections/Payments1"
 import PopularDestinations1 from "@/components/sections/PopularDestinations1"

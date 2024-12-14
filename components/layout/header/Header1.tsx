@@ -54,12 +54,12 @@ export default function Header1({
                   <ul className="main-menu">
                     <li className="mega-li">
                       <Link className="active" href="/">
-                        Home
+                        {t('home')}
                       </Link>
                       
                     </li>
                     <li className="mega-li-small has-children">
-                      <Link href="/about">{t('tours')}</Link>
+                      <Link href="/tours">{t('tours')}</Link>
                       <div className="mega-menu">
                         <div className="mega-menu-inner mega-menu-inner-small">
                           <div className="row">
@@ -73,26 +73,7 @@ export default function Header1({
                                     Tours List - Top Fillter
                                   </Link>
                                 </li>
-                                <li>
-                                  <Link href="/tour-grid">
-                                    Sidebar Left Fillter
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/tour-grid-2">
-                                    Sidebar Right Fillter
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/tour-list">
-                                    Tours List - List 1
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/tour-list-2">
-                                    Tours List - List 2
-                                  </Link>
-                                </li>
+                              
                               </ul>
                             </div>
                             <div className="col-lg-6">
@@ -187,51 +168,13 @@ export default function Header1({
                       </ul>
                     </li>
 
-                    <li className="mega-li-small has-children">
+                    <li className="mega-li-small">
                       <Link href="/service">{t('destinations')}</Link>
-                      <div className="mega-menu">
-                        <div className="mega-menu-inner mega-menu-inner-small mega-menu-inner-destinations">
-                          <h6 className="text-lg-bold neutral-1000">
-                            Destinations
-                          </h6>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/destination">
-                                Destinations list 01
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/destination-2">
-                                Destinations list 02
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/destination-3">
-                                Destinations list 03
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/destination-4">
-                                Destinations Details 01
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/destination-5">
-                                Destinations Details 02
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/destination-6">
-                                Destinations Details 03
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                      
                     </li>
                     
-                    <li className="has-children">
-                      <Link href="/javascript:void(0)">Pages</Link>
+                    <li>
+                      <Link href="/about">{t('about')}</Link>
                       <ul className="sub-menu">
                         <li>
                           <Link href="/about">About</Link>
@@ -262,23 +205,14 @@ export default function Header1({
                         </li>
                       </ul>
                     </li>
-                    <li className="has-children">
-                      <Link href="/blog-grid">{t('blog')}</Link>
+                    <li>
+                      <Link href="/blog">{t('blog')}</Link>
                       <ul className="sub-menu">
-                        <li>
-                          <Link href="/blog-grid">Grid Full</Link>
-                        </li>
                         <li>
                           <Link href="/blog-grid-2">Grid Sidebar</Link>
                         </li>
                         <li>
-                          <Link href="/blog-grid-3">List</Link>
-                        </li>
-                        <li>
                           <Link href="/blog-detail">Blog Details</Link>
-                        </li>
-                        <li>
-                          <Link href="/blog-detail-2">Blog Details 2</Link>
                         </li>
                       </ul>
                     </li>
