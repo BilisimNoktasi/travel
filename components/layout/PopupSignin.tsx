@@ -16,7 +16,7 @@ export default function PopupSignin({ isLogin, handleLogin, isRegister, handleRe
 						<div className="form-login">
 							<form action="#">
 								<div className="form-group">
-									<label className="text-sm-medium">{}</label>
+									<label className="text-sm-medium">{t("mail")}</label>
 									<input className="form-control username" type="text" placeholder="Email" />
 								</div>
 								<div className="form-group">

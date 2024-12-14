@@ -1,5 +1,7 @@
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 export default function Footer1() {
+    const t =useTranslations("Footer")
     return (
         <>
             <footer className="footer">
@@ -8,21 +10,21 @@ export default function Footer1() {
                         <div className="row align-items-center">
                             <div className="col-md-4 text-center text-md-start"><Link className="d-inline-block" href="/"><img alt="Travila" src="/assets/imgs/template/logo-footer.svg" /></Link></div>
                             <div className="col-md-8 text-center text-md-end">
-                                <div className="d-flex align-items-center justify-content-center justify-content-md-end"><Link className="text-md-medium need-help" href="/tel:1-800-222-8888">Need help? Call us</Link><Link className="heading-6 phone-support" href="/tel:1-800-222-8888">1-800-222-8888</Link></div>
+                                <div className="d-flex align-items-center justify-content-center justify-content-md-end"><Link className="text-md-medium need-help" href="/tel:1-800-222-8888">{t("need")}</Link><Link className="heading-6 phone-support" href="/tel:1-800-222-8888">{t("phone")}</Link></div>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-3 col-sm-12 footer-1">
-                            <h6>Contact Us </h6>
+                            <h6>{t("contact")} </h6>
                             <div className="mt-20 mb-20">
                                 <div className="box-info-contact">
-                                    <p className="text-md neutral-400 icon-address">4517 Washington Ave. Manchester, Kentucky 39495
+                                    <p className="text-md neutral-400 icon-address">{t("location")}
                                     </p>
-                                    <p className="text-md neutral-400 icon-worktime">Hours: 8:00 - 17:00, Mon - Sat</p>
-                                    <p className="text-md neutral-400 icon-email">support@travila.com</p>
+                                    <p className="text-md neutral-400 icon-worktime">{t("hours")}</p>
+                                    <p className="text-md neutral-400 icon-email">{t("mail")}</p>
                                 </div>
-                                <p className="text-lg-bold title-follow neutral-0">Follow us</p>
+                                <p className="text-lg-bold title-follow neutral-0">{t("socialMedia")}</p>
                                 <div className="box-socials-footer"><Link className="icon-socials icon-instagram" href="#">
                                     <svg width={20} height={20} viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.4915 1.6665H6.50817C3.47484 1.6665 1.6665 3.47484 1.6665 6.50817V13.4832C1.6665 16.5248 3.47484 18.3332 6.50817 18.3332H13.4832C16.5165 18.3332 18.3248 16.5248 18.3248 13.4915V6.50817C18.3332 3.47484 16.5248 1.6665 13.4915 1.6665ZM9.99984 13.2332C8.2165 13.2332 6.7665 11.7832 6.7665 9.99984C6.7665 8.2165 8.2165 6.7665 9.99984 6.7665C11.7832 6.7665 13.2332 8.2165 13.2332 9.99984C13.2332 11.7832 11.7832 13.2332 9.99984 13.2332ZM14.9332 5.73317C14.8915 5.83317 14.8332 5.92484 14.7582 6.00817C14.6748 6.08317 14.5832 6.1415 14.4832 6.18317C14.3832 6.22484 14.2748 6.24984 14.1665 6.24984C13.9415 6.24984 13.7332 6.1665 13.5748 6.00817C13.4998 5.92484 13.4415 5.83317 13.3998 5.73317C13.3582 5.63317 13.3332 5.52484 13.3332 5.4165C13.3332 5.30817 13.3582 5.19984 13.3998 5.09984C13.4415 4.9915 13.4998 4.90817 13.5748 4.82484C13.7665 4.63317 14.0582 4.5415 14.3248 4.59984C14.3832 4.60817 14.4332 4.62484 14.4832 4.64984C14.5332 4.6665 14.5832 4.6915 14.6332 4.72484C14.6748 4.74984 14.7165 4.7915 14.7582 4.82484C14.8332 4.90817 14.8915 4.9915 14.9332 5.09984C14.9748 5.19984 14.9998 5.30817 14.9998 5.4165C14.9998 5.52484 14.9748 5.63317 14.9332 5.73317Z" />
@@ -39,9 +41,9 @@ export default function Footer1() {
                             </div>
                         </div>
                         <div className="col-md-2 col-xs-6 footer-2">
-                            <h6 className="text-linear-3">Support</h6>
+                            <h6 className="text-linear-3">{t("support")}</h6>
                             <ul className="menu-footer">
-                                <li><Link href="#">Forum support</Link></li>
+                                <li><Link href="#">Forum support</Link></li> 
                                 <li><Link href="#"> Help Center</Link></li>
                                 <li><Link href="#">Live chat</Link></li>
                                 <li><Link href="#">How it works</Link></li>
@@ -51,18 +53,18 @@ export default function Footer1() {
                             </ul>
                         </div>
                         <div className="col-md-2 col-xs-6 footer-3">
-                            <h6 className="text-linear-3">Company</h6>
+                            <h6 className="text-linear-3">{t("company")}</h6>
                             <ul className="menu-footer">
-                                <li><Link href="#">About Us</Link></li>
-                                <li><Link href="#">Community Blog</Link></li>
-                                <li><Link href="#">Jobs and Careers</Link></li>
-                                <li><Link href="#">Contact Us</Link></li>
-                                <li><Link href="#">Our Awards</Link></li>
-                                <li><Link href="#">Agencies</Link></li>
+                                <li><Link href="#">Misyonumuz&Vizyonumuz</Link></li>
+                                <li><Link href="#">Gizlilik Sözleşmesi</Link></li>
+                                <li><Link href="#">Gizlilik Sözleşmesi</Link></li>
+                                <li><Link href="#">Gizlilik Sözleşmesi</Link></li>
+                                <li><Link href="#">Gizlilik Sözleşmesi</Link></li>
+                                <li><Link href="#">Gizlilik Sözleşmesi</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-2 col-xs-6 footer-4">
-                            <h6 className="text-linear-3">Services</h6>
+                            <h6 className="text-linear-3">{t("company")}</h6>
                             <ul className="menu-footer">
                                 <li><Link href="#">Tour Guide</Link></li>
                                 <li><Link href="#">Tour Booking</Link></li>
@@ -72,7 +74,7 @@ export default function Footer1() {
                             </ul>
                         </div>
                         <div className="col-md-3 col-xs-6 footer-5">
-                            <h6 className="text-linear-3">Legal</h6>
+                            <h6 className="text-linear-3">{t("legal")}</h6>
                             <ul className="menu-footer">
                                 <li><Link href="#">Terms of Service</Link></li>
                                 <li><Link href="#">Privacy Policy</Link></li>

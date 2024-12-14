@@ -21,6 +21,17 @@
      "subTitle":"Hesabın yok mu?",
      "subTitle2":"Hemen kayıt ol!"    
     },
+    "SignUp":{
+     "title":"Üye Ol",
+     "google":"Google ile giriş yap",
+     "mail":"Mail Adresi",
+     "password":"Şifre",
+     "password1":"Tekrar Şifre",
+     "subTitle":"Hüküm ve koşulları kabul ediyorum",
+     "button":"Yeni Hesap Oluştur",
+     "subTitle1":"Zaten bir hesabınız var mı?",
+     "subTitle2":"Buradan Giriş Yapın!" 
+    },
     "Common": {
         "viewMoreBtn": "Daha Fazla"
     },
@@ -186,10 +197,20 @@
     "eventDates":"Etkinlik Tarihleri",
     "contactUs":"Bizimle İletişime Geçin",
     "hours":"Saat"
-
     },
-    
-
+    "Footer":{
+    "location":"Antalya/Muratpaşa",
+    "hours":"Çalışma Saatlerimiz:7/24",
+    "mail":"info@bilisimnoktasi",
+    "socialMedia":"Sosyal Medyada Biz",
+    "support":"Destek",
+    "company":"Şirketler",
+    "services":"Servisler",
+    "legal":"Yasal",
+    "phone":"0555 555 55 55",
+    "need":"Yardıma ihtiyacınız mı var?",
+    "contact":"İletişime Geç"
+    },
     "HomePage": {
         "title": "Senin Yolculuğun, Senin Yolun",
         "subtitle": "Travila ile Dünya Hazinelerini Keşfedin",
