@@ -2,7 +2,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { swiperGroupAnimate } from "@/util/swiperOption";
 import { Link } from "@/i18n/routing";
-import Countdown from "../elements/Countdown";
 import { useTranslations } from "next-intl";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/redux/store";
@@ -14,6 +13,7 @@ export default function YourJourney() {
   const dispatch = useDispatch<AppDispatch>();
   const { tours } = useSelector((state: RootState) => state.tour);
   const t = useTranslations("HomePage");
+  const t_card = useTranslations("TourCard")
 
   useEffect(() => {
     dispatch(getToursDispatch(0, 10));
@@ -67,7 +67,7 @@ export default function YourJourney() {
             <div className="swiper-container mx-2 swiper-group-animate swiper-group-journey">
               <Swiper {...swiperGroupAnimate}>
                 {tours?.map((item, index) => (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                 <div className="card-journey-small background-card">
                   <div className="card-image">
                     {" "}
@@ -97,7 +97,7 @@ export default function YourJourney() {
                         {" "}
                         <span className="rating">
                           4.96{" "}
-                          <span className="text-sm-medium neutral-500">(672 reviews)</span>
+                          <span className="text-sm-medium neutral-500">{`(672 ${t_card('reviews')})`}</span>
                         </span>
                       </div>
                     </div>
@@ -109,12 +109,12 @@ export default function YourJourney() {
                     </div>
                     <div className="card-program">
                       <div className="duration">
-                        <p className="text-md-medium neutral-500">{item.duration} hours - {item.groupSize} Group Size</p>
+                        <p className="text-md-medium neutral-500">{item.duration} {t_card('hours')} - {item.groupSize} {t_card('group_size')}</p>
                       </div>
                       <div className="endtime">
                         <div className="card-price">
                           <h6 className="heading-6 neutral-1000">$48.25</h6>
-                          <p className="text-md-medium neutral-500">/ person</p>
+                          <p className="text-md-medium neutral-500">/ {t_card('person')}</p>
                         </div>
                         <div className="card-button">
                           {" "}

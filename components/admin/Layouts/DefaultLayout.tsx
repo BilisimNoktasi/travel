@@ -3,6 +3,7 @@ import React, { useState, ReactNode } from "react";
 import Sidebar from "../Sidebar/index";
 import Header from "../Header/index";
 
+
 export default function DefaultLayout({
   children,
 }: {
