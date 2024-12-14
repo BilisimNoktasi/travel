@@ -1,10 +1,12 @@
+import { useTranslations } from "next-intl"
 
 export default function ByDuration({ filter, handleDurationRangeChange }: any) {
+	const t=useTranslations("tourGrid")
 	return (
 		<>
 
 			<label>
-				Min Duration (days):
+				{t("minDuration(days)")}
 				<input
 					type="number"
 					name="minDuration"
@@ -15,7 +17,7 @@ export default function ByDuration({ filter, handleDurationRangeChange }: any) {
 				/>
 			</label>
 			<label>
-				Max Duration (days):
+			{t("maxDuration(days)")}
 				<input
 					type="number"
 					name="maxDuration"

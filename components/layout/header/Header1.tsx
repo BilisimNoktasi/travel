@@ -295,7 +295,7 @@ export default function Header1({
               <div className="d-none d-xxl-inline-block align-middle mr-15">
                 <ThemeSwitch />
                 <a className="btn btn-default btn-signin" onClick={handleLogin}>
-                  Signin
+                  {t("signIn")}
                 </a>
               </div>
               <div

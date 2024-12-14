@@ -3,7 +3,9 @@ import { swiperGroupTestimonials1 } from "@/util/swiperOption"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 export default function Contact() {
+    const t= useTranslations("Contact")
 
     return (
         <>
@@ -25,19 +27,19 @@ export default function Contact() {
                         <div className="container">
                             <div className="row align-items-end">
                                 <div className="col-lg-7 wow fadeInUp">
-                                    <h1 className="neutral-1000 mt-15 mb-15"> <span>Contact</span>Our
-                                        Friendly  <span>Experts Team</span>
+                                    <h1 className="neutral-1000 mt-15 mb-15"> <span>{t("title")}</span>
+                                    {t("title1")}   <span>{t("title2")}</span>
                                     </h1>
-                                    <p className="text-xl-medium neutral-500">Any questions? We would be happy to help you.</p>
+                                    <p className="text-xl-medium neutral-500">{t("subTitle")}</p>
                                 </div>
                                 <div className="col-lg-5 text-start text-lg-end wow fadeInUp">
                                     <div className="box-text-location d-inline-block">
                                         <p className="text-lg-bold neutral-1000">
                                             <svg className="mr-10" width={12} height={17} viewBox="0 0 12 17" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M6.00016 0.5C2.805 0.5 0.205566 3.09944 0.205566 6.29456C0.205566 10.2598 5.39116 16.081 5.61194 16.3269C5.81932 16.5579 6.18138 16.5575 6.38838 16.3269C6.60916 16.081 11.7948 10.2598 11.7948 6.29456C11.7947 3.09944 9.19529 0.5 6.00016 0.5ZM6.00016 9.20997C4.3926 9.20997 3.08478 7.90212 3.08478 6.29456C3.08478 4.687 4.39263 3.37919 6.00016 3.37919C7.60769 3.37919 8.9155 4.68703 8.9155 6.29459C8.9155 7.90216 7.60769 9.20997 6.00016 9.20997Z" />
-                                            </svg>Our Location
+                                            </svg>{t("location")}
                                         </p>
-                                        <p className="text-md-medium neutral-500">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                                        <p className="text-md-medium neutral-500">{t("locationDetail")}</p>
                                     </div>
                                 </div>
                             </div>
@@ -52,10 +54,10 @@ export default function Contact() {
                                             </div>
                                         </div>
                                         <div className="card-info">
-                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">Help  support</Link>
-                                                <p className="text-xs-medium neutral-500">For help with a current product or service or refer to FAQs and developer tools</p>
+                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">{t("contactCard")}</Link>
+                                                <p className="text-xs-medium neutral-500">{t("contactCardDescrpiton")}</p>
                                             </div>
-                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/mailto:support@alithemes.com">support@alithemes.com</Link></div>
+                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/mailto:support@alithemes.com">{t("mail")}</Link></div>
                                         </div>
                                     </div>
                                 </div>
@@ -81,10 +83,10 @@ export default function Contact() {
                                             </div>
                                         </div>
                                         <div className="card-info">
-                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">Call Us</Link>
-                                                <p className="text-xs-medium neutral-500">Call us to speak to a member of our team.</p>
+                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">{t("contactCard1")}</Link>
+                                                <p className="text-xs-medium neutral-500">{t("contactCardDescrpiton1")}</p>
                                             </div>
-                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/tel:(+01) 234 567 89">(+01) 234 567 89 -  456 789 21</Link></div>
+                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/tel:(+01) 234 567 89">{t("phone")}</Link></div>
                                         </div>
                                     </div>
                                 </div>
@@ -98,10 +100,10 @@ export default function Contact() {
                                             </div>
                                         </div>
                                         <div className="card-info">
-                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">Business Department</Link>
-                                                <p className="text-xs-medium neutral-500">Contact the sales department about cooperation projects</p>
+                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">{t("contactCard2")}</Link>
+                                                <p className="text-xs-medium neutral-500">{t("contactCardDescrpiton2")}</p>
                                             </div>
-                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/tel:(+01) 789 456 23">(+01) 789 456 23</Link></div>
+                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/tel:(+01) 789 456 23">{t("phone")}</Link></div>
                                         </div>
                                     </div>
                                 </div>
@@ -115,10 +117,10 @@ export default function Contact() {
                                             </div>
                                         </div>
                                         <div className="card-info">
-                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">Global branch</Link>
-                                                <p className="text-xs-medium neutral-500">Contact us to open our branches globally.</p>
+                                            <div className="card-title"> <Link className="title text-lg-bold" href="#">{t("contactCard2")}</Link>
+                                                <p className="text-xs-medium neutral-500">{t("contactCardDescrpiton2")}</p>
                                             </div>
-                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/tel:(+01) 789 456 23">(+01) 789 456 23</Link></div>
+                                            <div className="card-method-contact"> <Link className="email text-sm-bold" href="/tel:(+01) 789 456 23">{t("phone")}</Link></div>
                                         </div>
                                     </div>
                                 </div>
@@ -129,50 +131,50 @@ export default function Contact() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 mb-30">
-                                    <h2 className="neutral-1000 mb-25">Get in Touch</h2>
+                                    <h2 className="neutral-1000 mb-25">{t("contactUs")}</h2>
                                     <div className="form-contact">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="form-group">
-                                                    <label className="text-sm-medium neutral-1000">First Name</label>
-                                                    <input className="form-control username" type="text" placeholder="First Name" />
+                                                    <label className="text-sm-medium neutral-1000">{t("firstName")}</label>
+                                                    <input className="form-control username" type="text" placeholder="Adınız" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="form-group">
-                                                    <label className="text-sm-medium neutral-1000">First Name</label>
-                                                    <input className="form-control username" type="text" placeholder="Last Name" />
+                                                    <label className="text-sm-medium neutral-1000">{t("lastName")}</label>
+                                                    <input className="form-control username" type="text" placeholder="Soyadınız" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-group">
-                                                    <label className="text-sm-medium neutral-1000">Email Adress</label>
-                                                    <input className="form-control email" type="email" placeholder="email@domain.com" />
+                                                    <label className="text-sm-medium neutral-1000">{t("mail2")}</label>
+                                                    <input className="form-control email" type="email" placeholder="email@email.com" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-group">
-                                                    <label className="text-sm-medium neutral-1000">Phone Number</label>
-                                                    <input className="form-control phone" type="text" placeholder="Phone number" />
+                                                    <label className="text-sm-medium neutral-1000">{t("phone4")}</label>
+                                                    <input className="form-control phone" type="text" placeholder="Telefon Numaranız" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
                                                 <div className="form-group">
-                                                    <label className="text-sm-medium neutral-1000">Your Message</label>
-                                                    <textarea className="form-control" rows={6} placeholder="Leave us a message..." defaultValue={""} />
+                                                    <label className="text-sm-medium neutral-1000">{t("message")}</label>
+                                                    <textarea className="form-control" rows={6} placeholder="Mesaj bırakınız..." defaultValue={""} />
                                                 </div>
                                             </div>
                                             <div className="box-remember-forgot">
                                                 <div className="form-group">
                                                     <div className="remeber-me">
                                                         <label className="text-sm-medium neutral-500">
-                                                            <input className="cb-remember" type="checkbox" />Agree to our <Link className="text-sm-bold" href="/term">Terms of service </Link>and <Link className="text-sm-bold" href="/privacy">Privacy Policy</Link>
+                                                            <input className="cb-remember" type="checkbox" />{t("description")} <Link className="text-sm-bold" href="/term">Gizlilik Politikası </Link>&<Link className="text-sm-bold" href="/privacy">Hizmet Şartları</Link>
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-12">
-                                                <button className="btn btn-book">Send message
+                                                <button className="btn btn-book">{t("messageButton")}
                                                     <svg width={17} height={16} viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8.5 15L15.5 8L8.5 1M15.5 8L1.5 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                                                     </svg>

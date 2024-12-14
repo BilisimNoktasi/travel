@@ -12,6 +12,7 @@ import TourCard1 from '@/components/elements/tourcard/TourCard1'
 import Layout from "@/components/layout/Layout"
 import rawToursData from "@/util/tours.json"
 import useTourFilter from '@/util/useTourFilter'
+import { useTranslations } from 'next-intl'
 import Link from "next/link"
 
 
@@ -22,6 +23,7 @@ const toursData = rawToursData.map(tour => ({
 	rating: parseFloat(tour.rating as string)
 }))
 export default function TourGrid() {
+	const t=useTranslations("tourGrid")
 	const {
 		filter,
 		sortCriteria,
@@ -46,6 +48,7 @@ export default function TourGrid() {
 		startItemIndex,
 		endItemIndex,
 	} = useTourFilter(toursData)
+
 	return (
 		<>
 
@@ -99,11 +102,11 @@ export default function TourGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Filter Price </h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("filterPrice")}</h6>
 												<ByPrice filter={filter} handlePriceRangeChange={handlePriceRangeChange} />
 											</div>
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">By Activities</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("byActivities")}</h6>
 												<ByActivities
 													uniqueActivities={uniqueActivities}
 													filter={filter}
@@ -111,7 +114,7 @@ export default function TourGrid() {
 												/>
 											</div>
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">By Attractions</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("byAttractions")}</h6>
 												<ByAttraction
 													uniqueAttractions={uniqueAttractions}
 													filter={filter}
@@ -119,14 +122,14 @@ export default function TourGrid() {
 												/>
 											</div>
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">By Durations</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("byDurations")}</h6>
 												<ByDuration
 													filter={filter}
 													handleDurationRangeChange={handleDurationRangeChange}
 												/>
 											</div>
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Review Score </h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("reviewScore")}</h6>
 												<ByRating
 													uniqueRatings={uniqueRatings}
 													filter={filter}
@@ -134,7 +137,7 @@ export default function TourGrid() {
 												/>
 											</div>
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">By Language </h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("byLanguage")}</h6>
 												<ByLanguage
 													uniqueLanguages={uniqueLanguages}
 													filter={filter}
@@ -144,7 +147,7 @@ export default function TourGrid() {
 										</div>
 									</div>
 									<div className="sidebar-left border-1 background-body">
-										<h6 className="text-lg-bold neutral-1000">Popular Tours</h6>
+										<h6 className="text-lg-bold neutral-1000">{t("popularTours")}</h6>
 										<div className="box-popular-posts">
 											<ul>
 												<li>

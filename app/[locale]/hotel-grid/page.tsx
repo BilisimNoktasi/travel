@@ -13,6 +13,7 @@ import Layout from "@/components/layout/Layout"
 import SwiperGroup8Slider from '@/components/slider/SwiperGroup8Slider'
 import rawHotelsData from "@/util/hotels.json"
 import useHotelFilter from '@/util/useHotelFilter'
+import { useTranslations } from 'next-intl'
 import Link from "next/link"
 const hotelsData = rawHotelsData.map(hotel => ({
 	...hotel,
@@ -43,7 +44,7 @@ export default function HotelGrid() {
 		startItemIndex,
 		endItemIndex,
 	} = useHotelFilter(hotelsData)
-
+	const t= useTranslations("HotelGrid")
 	return (
 		<>
 
@@ -52,8 +53,8 @@ export default function HotelGrid() {
 					<section className="box-section block-banner-tourlist">
 						<div className="container">
 							<div className="text-center">
-								<h3>A World Of Luxury Awaits You</h3>
-								<h6 className="heading-6-medium">We Provide Our Best Facilities For You</h6>
+								<h3>{t("bigTitle")}</h3>
+								<h6 className="heading-6-medium">{t("miniTitle")}</h6>
 							</div>
 							<div className="box-search-advance box-search-advance-3 background-card wow fadeInUp">
 								<SearchFilterBottom />
@@ -116,7 +117,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Filter Price </h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("filterPrice")}</h6>
 												<ByPrice filter={filter} handlePriceRangeChange={handlePriceRangeChange} />
 											</div>
 										</div>
@@ -124,7 +125,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Hotel Type</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("hotelType")}</h6>
 												<ByHotelType
 													uniqueHotelsType={uniqueHotelsType}
 													filter={filter}
@@ -136,7 +137,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Hotel Type</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("hotelType")}</h6>
 												<ByHotelType
 													uniqueHotelsType={uniqueHotelsType}
 													filter={filter}
@@ -148,7 +149,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Amenities</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("amenities")}</h6>
 												<ByAmenities
 													uniqueAmenities={uniqueAmenities}
 													filter={filter}
@@ -160,7 +161,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Room Style</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("roomStyle")}</h6>
 												<ByRoom
 													uniqueRoomStyles={uniqueRoomStyles}
 													filter={filter}
@@ -172,7 +173,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Review Score </h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("reviewScore")}</h6>
 												<ByRating
 													uniqueRatings={uniqueRatings}
 													filter={filter}
@@ -184,7 +185,7 @@ export default function HotelGrid() {
 									<div className="sidebar-left border-1 background-body">
 										<div className="box-filters-sidebar">
 											<div className="block-filter border-1">
-												<h6 className="text-lg-bold item-collapse neutral-1000">Booking Location</h6>
+												<h6 className="text-lg-bold item-collapse neutral-1000">{t("bookingLocation")}</h6>
 												<ByLocation
 													uniqueLocations={uniqueLocations}
 													filter={filter}

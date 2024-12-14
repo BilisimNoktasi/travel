@@ -7,16 +7,209 @@
         "hotel": "Otel",
         "about": "Hakkımızda",
         "blog": "Blog",
-        "contact": "İletişim"
+        "contact": "İletişim",
+        "signIn":"Giriş Yap"
+    },
+    "SignIn":{
+     "title":"Merhabalar",
+     "google":"Google ile giriş yap",
+     "mail":"Mail Adresi",
+     "password":"Şifre",
+     "rememberMe":"Beni hatırla",
+     "forgotPassword":"Şifreni mi unuttun?",
+     "button":"Giriş Yap",
+     "subTitle":"Hesabın yok mu?",
+     "subTitle2":"Hemen kayıt ol!"    
+    },
+    "SignUp":{
+     "title":"Üye Ol",
+     "google":"Google ile giriş yap",
+     "mail":"Mail Adresi",
+     "password":"Şifre",
+     "password1":"Tekrar Şifre",
+     "subTitle":"Hüküm ve koşulları kabul ediyorum",
+     "button":"Yeni Hesap Oluştur",
+     "subTitle1":"Zaten bir hesabınız var mı?",
+     "subTitle2":"Buradan Giriş Yapın!" 
     },
     "Common": {
         "viewMoreBtn": "Daha Fazla"
     },
+    "SearchBar":{
+        "description":"Yardıma mı ihtiyacınız var?",
+        "location":"Konum",
+        "checkIn":"Giriş Tarihi",
+        "checkOut":"Çıkış Tarihi",
+        "guest":"Misafir",
+        "search":"Ara"
+       },
+       "FilterByProporties":{
+        "title":"Popüler Hedefler",
+        "subTitle":"Müşteri yorumlarına göre favori hedefler",
+       "categories":"Kategoriler",
+       "duration":"Süre",
+       "review":"Görüntüleme/Derecelendirme",
+       "price":"Fiyat Aralığı"
+       },
     "TourCard": {
         "reviews":"görüntüleme",
         "hours":"saat",
         "group_size":"kapasite",
         "person":"kişi"
+    },
+    "WhyChooseUs": {
+   "miniTitle":"Neden Bizi Seçmelisiniz?",
+   "bigTitle":"Her zaman istediğiniz asansörü yaşamaya cesaret edin",
+   "descrption":"Maceranızın karbon emisyonlarını nasıl dengeleyebileceğinizi ve dünya çapındaki operatörlerimiz tarafından uygulanan sürdürülebilir girişimleri nasıl destekleyebileceğinizi keşfedin."
+    },
+    "CategoryCard":{
+   "title":"",
+   "button":"Daha Fazlası"
+    },
+
+    "tourGrid":{
+    "filterPrice":"Fiyat Filtresi",
+    "byActivities":"Faaliyetlere Göre",
+    "byAttractions":"Gezilecek Yere Göre",
+    "byDurations":"Süreye Göre",
+    "reviewScore":"İnceleme Puanı",
+    "byLanguage":"Dile Göre",
+    "popularTours":"Popüler Turlar",
+    "seeMore":"Daha Fazlası",
+    "minDuration(days)":"Minimum Süre(Gün)",
+    "maxDuration(days)":"Maximum Süre(Gün)",
+    "stars":"Yıldız"
+
+    },
+   "SortToursFilter":{
+    "filterResult":"Sonuç listelendi",
+    "clearFilter":"Filtreyi Temizle",
+    "show":"Göster",
+    "shortBy":"Sırala:",
+    "byName":"Ad ",
+    "byPrice":"Fiyat",
+    "byStar":"Yıldız"
+    },
+    "TourCard1":{
+     "topRated":"En İyiler",
+     "reviews":"Yorum",
+     "days":"Gün",
+     "night":"Gece",
+     "guest":"Misafir",
+     "bookNow":"Rezervasyon"
+    },
+    "HotelGrid":{
+    "bigTitle":"Lüks Bir Dünya Sizi Bekliyor",
+    "miniTitle":"Sizler İçin En İyi İmkanlarımızı Sunuyoruz",
+    "filterPrice":"Fiyat Filtresi",
+    "hotelType":"Otel Tipi",
+    "amenities":"Olanaklar",
+    "roomStyle":"Oda Stili",
+    "reviewScore":"İnceleme Puanı",
+    "bookingLocation":"Rezervasyon Yeri"
+    },
+    "SortHotelFilter":{
+    "filterResult":"Sonuç listelendi",
+    "clearFilter":"Filtreyi Temizle",
+    "show":"Göster",
+    "shortBy":"Sırala:",
+    "byName":"Ad ",
+    "byPrice":"Fiyat",
+    "byStar":"Yıldız"
+    },
+    "HotelCard1":{
+    "reviews":"Yorum",
+    "topRates":"En İyiler",
+    "night":"/Gece",
+    "bookNow":"Rezervasyon"
+    },
+    "Destinations":{
+    "home":"Anasayfa",
+    "destinations":"Hedefler",
+    "bigTitle":"Popüler Hedefler",
+    "miniTitle":"Müşteri yorumlarına göre favori destinasyonlar",
+    "tour":"Tur",
+    "activities":"Faaliyet",
+    "bigTitle2":"En Beğenilen Oteller",
+    "miniTitle2":"Müşteriler tarafından değerlendirilen kalite. İdeal fiyata rezervasyon yapın!",
+    "reviews":"Yorum",
+    "person":"/Kişi",
+    "bookNow":"Rezervasyon",
+    "bigTitle3":"Öne Çıkan Avrupa Turları",
+    "miniTitle3": "Müşteri yorumlarına göre favori destinasyonlar",
+    "reviews2":"Yorum",
+    "days":"Gün",
+    "night":"Gece",
+    "guest":"Misafir",
+    "person2":"/Kişi",
+    "bookNow2":"Rezervasyon",
+    "topRated":"En Çok Yorum Alan",
+    "buttonSky":"Sizi Gökyüzüne Götürür",
+    "bigTitle4":"Eşsiz Uçuş Deneyimleri için Öncelikli Destinasyonunuz",
+    "description":"Sadece birkaç tıklamayla kolayca uçuş rezervasyonu yapabileceğiniz, check-in yapabileceğiniz ve seyahat programınızda değişiklik yapabileceğiniz web sitemizle stressiz bir seyahat planlaması deneyimi yaşayın",
+    "newsletterButton":"En Güncel İndirimler İçin Mail Alın",
+    "description2":"Kaydolduğunuz anda fiyatların düştüğü gizli fırsatları görmek için abone olun!",
+    "eMail":"Mail Adresiniz",
+    "subscribe":"Abone Olun",
+    "miniDescription":"Reklam yok. Yol yok. Taahhüt yok"
+    },
+
+    "Contact":{
+    "title":"Güler Yüzlü ",
+    "title1":"Uzman Ekibimizle",
+    "title2":"İletişime Geçin",
+    "subTitle":"Herhangi bir sorunuz var mı? Size yardımcı olmaktan mutluluk duyarız",
+    "location":"Adresimiz",
+    "locationDetail":"Antalya/Muratpaşa",
+    "contactCard":"Yardım Desteği",
+    "contactCardDescrpiton":"Mevcut bir ürün veya hizmetle ilgili yardım için veya SSS'lere ve geliştirici araçlarına bakın",
+    "mail":"info@bilisimnoktasi",
+    "contactCard1":"Bizi Arayın",
+    "contactCardDescrpiton1":"Ekibimizin bir üyesiyle konuşmak için bizi arayın.",
+    "phone":"0555 555 55 55",
+    "contactCard2":"İşletme Departmanı",
+    "contactCardDescrpiton2":"İşbirliği projeleri hakkında satış departmanıyla iletişime geçin",
+    "phone2":"0555 555 55 55",
+    "contactCard3":"Küresel şube",
+    "contactCardDescrpiton3":"Dünya çapında şubelerimizi açmak için bizimle iletişime geçin.",
+    "phone3":"0555 555 55 55",
+    "contactUs":"Bizimle İletişime Geçin",
+    "firstName":"Ad",
+    "lastName":"Soyad",
+    "mail2":"Mail Adresi",
+    "phone4":"Telefon Numarası",
+    "message":"Mesaj",
+    "description":"Okudum,anladım.",
+    "messageButton":"Gönder",
+    "stepOne":"Yardıma mı ihtiyacınız var? Bizi arayın",
+    "stepOnePhone":"0555 555 55 55",
+    "stepTwo":"Travila Ortaklık Programına Bugün Katılın!",
+    "stepThreeTitle":"Bize Mesaj Gönderin",
+    "stepThreeDescription":"Rezervasyonunuzla ilgili olarak acentelerimizle iletişime geçin, mümkün olan en kısa sürede yanıt vereceğiz."
+    },
+    "SideBarMenu":{
+    "logout":"Çıkış Yap",
+    "quickLinks":"Hızlı Bağlantılar",
+    "settings":"Ayarlar",
+    "bookMarks":"Not Defterim",
+    "notifications":"Bildirimler",
+    "savedPlaces":"Kaydettiklerim",
+    "eventDates":"Etkinlik Tarihleri",
+    "contactUs":"Bizimle İletişime Geçin",
+    "hours":"Saat"
+    },
+    "Footer":{
+    "location":"Antalya/Muratpaşa",
+    "hours":"Çalışma Saatlerimiz:7/24",
+    "mail":"info@bilisimnoktasi",
+    "socialMedia":"Sosyal Medyada Biz",
+    "support":"Destek",
+    "company":"Şirketler",
+    "services":"Servisler",
+    "legal":"Yasal",
+    "phone":"0555 555 55 55",
+    "need":"Yardıma ihtiyacınız mı var?",
+    "contact":"İletişime Geç"
     },
     "HomePage": {
         "title": "Senin Yolculuğun, Senin Yolun",
