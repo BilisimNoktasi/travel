@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import BannerHome1 from "@/components/sections/BannerHome1"
-
+import { Link } from "@/i18n/routing"
 import Category from "@/components/sections/Category"
 import News1 from "@/components/sections/News1"
 import Payments1 from "@/components/sections/Payments1"

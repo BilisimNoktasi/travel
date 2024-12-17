@@ -12,11 +12,13 @@ export default function SearchFilterBottom({ miniField }: any) {
 					<div className="item-search">
 						<label className="text-sm-bold neutral-500">{t("location")}</label>
 						<Dropdown className="dropdown">
-							<Dropdown.Toggle className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search" type="button" data-bs-toggle="dropdown" aria-expanded="false">New York, USA</Dropdown.Toggle>
+							<Dropdown.Toggle className="btn btn-secondary dropdown-toggle btn-dropdown-search location-search" type="button" data-bs-toggle="dropdown" aria-expanded="false">Antalya,Kaş</Dropdown.Toggle>
 							<Dropdown.Menu as="ul" className="dropdown-menu">
-								<li><Link className="dropdown-item" href="#">Sydney, Australia</Link></li>
+								<li><Link className="dropdown-item" href="#">Muğla,Bodrum</Link></li>
 								<li><Link className="dropdown-item" href="#">London, England</Link></li>
-								<li><Link className="dropdown-item" href="#">New York City, USA</Link></li>
+								<li><Link className="dropdown-item" href="#">İzmir,Alaçatı</Link></li>
+								<li><Link className="dropdown-item" href="#">London, England</Link></li>
+
 							</Dropdown.Menu>
 						</Dropdown>
 					</div>
@@ -37,11 +39,11 @@ export default function SearchFilterBottom({ miniField }: any) {
 					<div className="item-search bd-none">
 						<label className="text-sm-bold neutral-500">{t("guest")}</label>
 						<Dropdown className="dropdown">
-							<Dropdown.Toggle className="btn btn-secondary dropdown-toggle btn-dropdown-search passenger-search" type="button" data-bs-toggle="dropdown" aria-expanded="false">2 adults, 2 children</Dropdown.Toggle>
+							<Dropdown.Toggle className="btn btn-secondary dropdown-toggle btn-dropdown-search passenger-search" type="button" data-bs-toggle="dropdown" aria-expanded="false">2 {t("adults")}, 1 {t("kids")}</Dropdown.Toggle>
 							<Dropdown.Menu as="ul" className="dropdown-menu">
-								<li><Link className="dropdown-item" href="#">2 adults, 1 children</Link></li>
-								<li><Link className="dropdown-item" href="#">2 adults, 2 children</Link></li>
-								<li><Link className="dropdown-item" href="#">2 adults, 3 children</Link></li>
+								<li><Link className="dropdown-item" href="#">2 {t("adults")}, 2 {t("kids")}</Link></li>
+								<li><Link className="dropdown-item" href="#">2 {t("adults")}, 3 {t("kids")}</Link></li>
+								<li><Link className="dropdown-item" href="#">2 {t("adults")}, 4 {t("kids")}</Link></li>
 							</Dropdown.Menu>
 						</Dropdown>
 					</div>

@@ -1,6 +1,7 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { swiperGroupAnimate } from "@/util/swiperOption"
+import { Link } from "@/i18n/routing"
 
 export default function Testimonials1() {
     return (

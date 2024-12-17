@@ -5,7 +5,7 @@ import Layout from "@/components/layout/Layout"
 import SwiperGroupPaymentSlider from '@/components/slider/SwiperGroupPaymentSlider'
 import { swiperGroup1, swiperGroupAnimate } from "@/util/swiperOption"
 import { useTranslations } from 'next-intl'
-import Link from "next/link"
+import { Link } from '@/i18n/routing'
 import { Swiper, SwiperSlide } from "swiper/react"
 export default function Destination2() {
 	const t= useTranslations("Destinations")

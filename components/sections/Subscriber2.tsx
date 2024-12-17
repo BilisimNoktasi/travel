@@ -5,7 +5,7 @@ export default function Subscriber2() {
             <section className="section-box box-subscriber background-body">
                 <div className="container">
                     <div className="block-subscriber">
-                        <div className="subscriber-left"><span className="btn btn-brand-secondary">Join our newsletter</span>
+                        <div className="subscriber-left"><span className="btn btn-brand-secondary">newsletter</span>
                             <h5 className="mt-15 mb-30 neutral-1000">Subscribe to see secret deals prices drop the moment you
                                 sign up!</h5>
                             <form className="form-subscriber" action="#">

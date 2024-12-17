@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl"
-import Link from "next/link"
-
+import { Link } from "@/i18n/routing"
 export default function WhyChooseUs1() {
     const t=useTranslations("WhyChooseUs")
     return (

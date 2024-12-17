@@ -36,10 +36,12 @@
         "viewMoreBtn": "Daha Fazla"
     },
     "SearchBar":{
-        "description":"Yardıma mı ihtiyacınız var?",
+        "description":"Yardıma ihtiyacınız mı  var?",
         "location":"Konum",
         "checkIn":"Giriş Tarihi",
         "checkOut":"Çıkış Tarihi",
+        "adults":"yetişkin",
+        "kids":"çocuk",
         "guest":"Misafir",
         "search":"Ara"
        },
@@ -89,6 +91,28 @@
     "byName":"Ad ",
     "byPrice":"Fiyat",
     "byStar":"Yıldız"
+    },
+    "homeBlog":{
+    "title":"Haberler, İpuçları Kılavuzlar",
+    "subTitle":"Müşteri yorumlarına göre favori destinasyonlar",
+    "button":"Daha Fazlasını Gör",
+    "buttonText":"Kültürel",
+    "jn":"Ocak",
+    "feb":"Şubat",
+    "mch":"Mart",
+    "april":"Nisan",
+    "may":"Mayıs",
+    "june":"Haziran",
+    "july":"Temmuz",
+    "agust":"Ağustos",
+    "spt":"Eylül",
+    "oct":"Ekim",
+    "november":"Kasım",
+    "dcmbr":"Aralık",
+    "mins":"dakika",
+    "comments":"yorum",
+    "keepReading":"Devamını Oku"
+
     },
     "TourCard1":{
      "topRated":"En İyiler",
@@ -181,7 +205,7 @@
     "message":"Mesaj",
     "description":"Okudum,anladım.",
     "messageButton":"Gönder",
-    "stepOne":"Yardıma mı ihtiyacınız var? Bizi arayın",
+    "stepOne":"Yardıma ihtiyacınız mı  var? Bizi arayın",
     "stepOnePhone":"0555 555 55 55",
     "stepTwo":"Travila Ortaklık Programına Bugün Katılın!",
     "stepThreeTitle":"Bize Mesaj Gönderin",
@@ -229,5 +253,22 @@
         "highlight": "Öne Çıkan Özellikler",
         "included_excluded": "Dahil / Dahil Değil",
         "questions_answer": "Soru Cevap"
+    },
+    "Error":{
+        "we":"Bu sayfayı",
+        "dontFind":"Bulamıyoruz",
+        "subTitle":"Aradığınız sayfa mevcut değil veya taşınmış.",
+        "goBack":"Geri Dön",
+        "helpCenter":"Yardım Merkezi",
+        "supportForm":"Destek Formu",
+        "sfd":"Sorunlarınızı toplulukla paylaşın",
+        "detail":"Detaylar",
+        "documentation":"Dökümantasyon",
+        "dcm":"Travila Platformu hakkında her şeyi öğrenmek için dalın",
+        "helpsCenter":"Yardım Merkezi",
+        "uzman":"Uzmanlarımızdan yardım alın",
+        "ourBlog":"Bloglarımız",
+        "blogdetay":"Blogumuzdan en son makaleleri okuyun"
     }
+
 }

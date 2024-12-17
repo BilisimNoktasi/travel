@@ -23,7 +23,7 @@ export default function PopularDestinations1() {
                         <div className="row">
                             <div className="col-lg-3 col-sm-6">
                                 <div className="card-popular background-card hover-up">
-                                    <div className="card-image"> <Link href="/destination"><img src="/assets/imgs/page/homepage1/popular.png" alt="Travila" /></Link></div>
+                                    <div className="card-image"> <Link href="/destinations"><img src="/assets/imgs/page/homepage1/popular.png" alt="Travila" /></Link></div>
                                     <div className="card-info"> <Link className="card-title" href="/destination">Venice</Link>
                                         <div className="card-meta">
                                             <div className="meta-links"> <Link href="#">356 Tours, </Link><Link href="#">248

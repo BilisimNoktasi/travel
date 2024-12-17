@@ -2,7 +2,7 @@
 import { swiperGroupTestimonials1 } from "@/util/swiperOption"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Layout from "@/components/layout/Layout"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 export default function Contact() {
     const t= useTranslations("Contact")

@@ -128,7 +128,7 @@ export default function VillaDetail({params}: {params: {url: string}}) {
 									<div className="container" />
 								</div>
 								<div className="container-banner container">
-									<VillaSlider urlList={villa?.pictures} />
+									<VillaSlider urlList={villa?.pictures|| []} />
 								</div>
 							</div>
 						</section>

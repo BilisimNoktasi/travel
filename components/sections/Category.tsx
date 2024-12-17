@@ -1,7 +1,7 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { swiperGroupAnimate } from "@/util/swiperOption"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 
 export default function Category() {

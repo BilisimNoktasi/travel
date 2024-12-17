@@ -1,9 +1,11 @@
 'use client'
 import Layout from "@/components/layout/Layout"
 import { swiperGroupAnimate } from "@/util/swiperOption"
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 import { Swiper, SwiperSlide } from "swiper/react"
 export default function Error404() {
+const t=useTranslations("Error")
 
 	return (
 		<>
@@ -13,13 +15,13 @@ export default function Error404() {
 					<section className="section-box box-become-video background-body">
 						<div className="container">
 							<div className="text-center"> <img className="mr-10" src="/assets/imgs/page/pages/404.png" alt="Travile" />
-								<h1 className="neutral-1000"> <span>We </span>Can’t Find <span>This Page</span></h1>
-								<p className="text-xl-medium neutral-500">The page you are looking for doesn’t exist or has been moved.
+								<h1 className="neutral-1000"> <span>{t("we")} </span>{t("dontFind")}</h1>
+								<p className="text-xl-medium neutral-500">{t("subTitle")}
 								</p>
 								<div className="d-flex align-items-center justify-content-center mt-45"><Link className="btn btn-black-lg-square" href="#">
 									<svg className="first" width={16} height={16} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 										<path d="M8 15L0.999999 8L8 1M1 8L15 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-									</svg>Go Back</Link><Link className="btn btn-link" href="#">Help Center</Link></div>
+									</svg>{t("goBack")}</Link><Link className="btn btn-link" href="#">{t("helpCenter")}</Link></div>
 							</div>
 							<div className="row mt-95">
 								<div className="col-lg-3 col-sm-6">
@@ -33,11 +35,11 @@ export default function Error404() {
 											</div>
 										</div>
 										<div className="card-info">
-											<div className="card-title"> <Link className="title text-lg-bold" href="#">Support Forum</Link>
-												<p className="text-xs-medium neutral-500">Communicate your problems with the community
+											<div className="card-title"> <Link className="title text-lg-bold" href="#">{t("supportForm")}</Link>
+												<p className="text-xs-medium neutral-500">{t("sfd")}
 												</p>
 											</div>
-											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">Details
+											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">{t("detail")}
 												<svg width={16} height={16} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 													<path d="M8 15L15 8L8 1M15 8L1 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 												</svg></Link></div>
@@ -57,11 +59,11 @@ export default function Error404() {
 											</div>
 										</div>
 										<div className="card-info">
-											<div className="card-title"> <Link className="title text-lg-bold" href="#">Documentation</Link>
-												<p className="text-xs-medium neutral-500">Dive in to learn all about Travila Platform
+											<div className="card-title"> <Link className="title text-lg-bold" href="#">{t("documentation")}</Link>
+												<p className="text-xs-medium neutral-500">{t("dcm")}
 												</p>
 											</div>
-											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">Details
+											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">{t("detail")}
 												<svg width={16} height={16} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 													<path d="M8 15L15 8L8 1M15 8L1 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 												</svg></Link></div>
@@ -86,10 +88,10 @@ export default function Error404() {
 											</div>
 										</div>
 										<div className="card-info">
-											<div className="card-title"> <Link className="title text-lg-bold" href="#">Help Center</Link>
+											<div className="card-title"> <Link className="title text-lg-bold" href="#">{t("helpCenter")}</Link>
 												<p className="text-xs-medium neutral-500">Get help from our experts</p>
 											</div>
-											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">Details
+											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">{t("detail")}
 												<svg width={16} height={16} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 													<path d="M8 15L15 8L8 1M15 8L1 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 												</svg></Link></div>
@@ -106,10 +108,10 @@ export default function Error404() {
 											</div>
 										</div>
 										<div className="card-info">
-											<div className="card-title"> <Link className="title text-lg-bold" href="#">Our Blog</Link>
-												<p className="text-xs-medium neutral-500">Read the latest articles from our blog</p>
+											<div className="card-title"> <Link className="title text-lg-bold" href="#">{t("ourBlog")}</Link>
+												<p className="text-xs-medium neutral-500">{t("blogdetay")}</p>
 											</div>
-											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">Details
+											<div className="card-method-contact"> <Link className="email text-md-bold" href="#">{t("detail")}
 												<svg width={16} height={16} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 													<path d="M8 15L15 8L8 1M15 8L1 8" stroke="" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
 												</svg></Link></div>
@@ -230,7 +232,6 @@ export default function Error404() {
 						</div>
 					</section>
 				</div>
-
 			</Layout>
 		</>
 	)

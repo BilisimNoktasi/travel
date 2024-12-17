@@ -1,4 +1,5 @@
 import SwiperGroupPaymentSlider from '../slider/SwiperGroupPaymentSlider'
+import { Link } from '@/i18n/routing'
 
 export default function Payments1() {
     return (
